@@ -4,7 +4,7 @@ Resource    ../../resources/imports.robot
 *** Keywords ***
 Get GitHub Account "${account}" Info
     [Documentation]    Get Account API
-    RequestsLibrary.Create Session    GetAccount    ${gh_api}
+    RequestsLibrary.Create Session    GetAccount    ${gh_api}   verify=true
     ${response}=    RequestsLibrary.GET On Session    GetAccount    ${get_users}/${account}
     Set Test Variable    ${response}    ${response}
 
