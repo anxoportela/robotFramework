@@ -10,5 +10,5 @@ get_users: /users
 
 #chrome_options
 chrome_options:
-  - --headless
+#  - --headless
   - --disable-gpu

@@ -4,6 +4,7 @@ Resource          ../../resources/imports.robot
 Test Setup        Given I Open My GitHub URL "${gh_url}" With Browser "${browser}"
 Test Teardown     Close Browser
 
+
 *** Test Cases ***
 TestCheckRepositoryOnGH
     [Documentation]    Open my GH and check whether my repository exists or not.
