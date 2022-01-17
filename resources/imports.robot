@@ -1,6 +1,8 @@
 *** Settings ***
-Library     Selenium2Library
+Library     SeleniumLibrary
 Library     RequestsLibrary
+Library     AppiumLibrary
 Resource    ../keywords/web/web_imports.robot
 Resource    ../keywords/api/api_imports.robot
+Resource    ../keywords/mobile/mobile_imports.robot
 Variables   config/application_config.yaml

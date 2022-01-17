@@ -3,5 +3,6 @@ addons:
   chrome: stable
 python:
   - "2.7"
+  - "3.10"
 install: "pip install -r requirements.txt"
 script: make clean test
