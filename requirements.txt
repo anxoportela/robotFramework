@@ -1,0 +1,6 @@
+pyyaml
+robotframework
+robotframework-selenium2library
+robotframework-lint
+robotframework-requests
+requests
