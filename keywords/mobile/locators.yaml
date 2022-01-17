@@ -1,0 +1,4 @@
+#appium locators
+input_text: txt_query_prefill
+btn_search: btn_start_search
+input_text_value: android:id/search_src_text

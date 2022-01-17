@@ -10,5 +10,11 @@ get_users: /users
 
 #chrome_options
 chrome_options:
-#  - --headless
+  #  - --headless
   - --disable-gpu
+
+#appium
+ANDROID_AUTOMATION_NAME: UIAutomator2
+ANDROID_APP: /home/anxo/Descargas/ApiDemos-debug.apk
+ANDROID_PLATFORM_NAME: Android
+ANDROID_PLATFORM_VERSION: "%{ANDROID_PLATFORM_VERSION=11}"
