@@ -17,6 +17,7 @@
   - [Api Library](https://accruent.github.io/robotframework-zoomba/APILibraryDocumentation.html)
   - [Web Library](https://accruent.github.io/robotframework-zoomba/GUILibraryDocumentation.html)
   - [Mobile Library](https://accruent.github.io/robotframework-zoomba/MobileLibraryDocumentation.html)
+- Enhanced debugging with [RobotFramework DebugLibrary](https://github.com/xyb/robotframework-debuglibrary), step-by-step debug from the CLI and can be used as an interactive shell(REPL).
 
 
 
