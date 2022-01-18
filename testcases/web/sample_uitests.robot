@@ -19,3 +19,8 @@ TestSearchRepositoryNotFound
     And Type Search Keyword "invalid repos"
     Then Search Result Should Not Be Found
 
+TestScrollBottom
+    [Documentation]    Scroll to the bottom of the page.
+    When Click On Tab "Repositories"
+    Then Scroll To Bottom
+
