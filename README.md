@@ -46,7 +46,7 @@
     
     ` git clone -b master --single-branch https://github.com/anxoportela/robotFramework.git saveFolder `
 
-    - With the project open on your IDE and its terminal or in a system terminal on the project root, install the required python packages: 
+- With the project open on your IDE and its terminal or in a system terminal on the project root, install the required python packages:
 
     ` pip install -r requirements.txt `
 
