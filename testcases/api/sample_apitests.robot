@@ -1,6 +1,7 @@
 *** Settings ***
+Documentation     Test My GitHub API
 Resource    ../../resources/imports.robot
-
+Default Tags    api
 
 *** Test Cases ***
 TestGetUserInfoSuccess

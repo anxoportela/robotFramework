@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation  Simple example using AppiumLibrary
 Resource          ../../resources/imports.robot
+Default Tags    mobile
 
 *** Test Cases ***
 Should send keys to search box and then check the value

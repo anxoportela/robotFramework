@@ -26,8 +26,8 @@ BROWSER := python -c "$$BROWSER_PYSCRIPT"
 help:
 	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
-clean: clean-build
-
+clean: ## clean results folder
+	clean-build
 
 clean-build: ## remove build artifacts
 	rm -fr result*/
@@ -43,6 +43,3 @@ test-web: ## run robotframework tests web
 
 test-mobile: ## run robotframework tests mobile
 	robot -d result-mobile -L TRACE -b debug.log testcases/mobile/
-
-test-ddt: ## run robotframework tests mobile
-	robot -d result-ddt -L TRACE -b debug.log testcases/ddt/

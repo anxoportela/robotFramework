@@ -3,6 +3,7 @@ Documentation     Test My GitHub Web
 Resource          ../../resources/imports.robot
 Test Setup        Given I Open My GitHub URL "${gh_url}" With Browser "${browser}"
 Test Teardown     Close Browser
+Default Tags    web
 
 
 *** Test Cases ***
