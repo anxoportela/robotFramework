@@ -29,7 +29,7 @@
 ### Installation
 
 
-##### IDE
+#### IDE
 
 - Install the following extensions.
     - [Robot Framework Language Server](https://plugins.jetbrains.com/plugin/16086-robot-framework-language-server)
@@ -37,16 +37,21 @@
     - [Requirements](https://plugins.jetbrains.com/plugin/10837-requirements)
 
 
-##### Base Project
+#### Base Project
 
 - Clone the repo:
     - Option A: Use your prefered git gui
     - Option B: Use embedded IntelliJ/PyCharm git interface
-    - Option C: ` git clone -b master --single-branch https://github.com/anxoportela/robotFramework.git saveFolder `
-- With the project open on your IDE and its terminal or in a system terminal on the project root, install the required python packages: ` pip install -r requirements.txt `
+    - Option C:
+    
+    ` git clone -b master --single-branch https://github.com/anxoportela/robotFramework.git saveFolder `
+
+- With the project open on your IDE and its terminal or in a system terminal on the project root, install the required python packages:
+
+    ` pip install -r requirements.txt `
 
 
-##### Appium Android Configuration
+#### Appium Android Configuration
 
 :building_construction: WORK IN PROGRESS :building_construction:
 
