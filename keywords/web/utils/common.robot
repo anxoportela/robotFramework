@@ -5,8 +5,8 @@ Resource    ../../../resources/imports.robot
 I Open My GitHub URL "${url}" With Browser "${browser}"
     [Documentation]    Open GitHub URL with specified browser
     Run Keyword If    '${browser.lower()}' == 'chrome'    Open Chrome Headless Browser    ${url}    ELSE    Open Other Browsers    ${url}    ${browser}
-    SeleniumLibrary.Wait Until Page Contains   ${account_name}    timeout=${explicit_timeout}
-    SeleniumLibrary.Capture Page Screenshot
+    Zoomba.GUILibrary.Wait Until Page Contains   ${account_name}    timeout=${explicit_timeout}
+    Zoomba.GUILibrary.Capture Page Screenshot
 
 
 Open Other Browsers
@@ -20,6 +20,7 @@ Open Chrome Headless Browser
     ${chrome_options}=    Set Chrome Options
     Create Webdriver    Chrome    chrome_options=${chrome_options}
     Go To    ${url}
+    Maximize Browser Window
 
 Set Chrome Options
     [Documentation]    Set Chrome Options for headless mode

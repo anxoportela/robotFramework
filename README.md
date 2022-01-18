@@ -13,6 +13,10 @@
 - Simple testing framework using opensource technologies like [RobotFramework](https://robotframework.org/), [SeleniumLibrary](https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html), [HTTP RequestsLibrary](https://marketsquare.github.io/robotframework-requests/doc/RequestsLibrary.html) and [AppiumLibrary](https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html).
 - The tests are developed using KDB (Keyword Driven Behavior).
 - Python based, can be executed in any operating system
+- Expanded functionality with [Zoomba Library](https://github.com/Accruent/robotframework-zoomba)
+  - [Api Library](https://accruent.github.io/robotframework-zoomba/APILibraryDocumentation.html)
+  - [Web Library](https://accruent.github.io/robotframework-zoomba/GUILibraryDocumentation.html)
+  - [Mobile Library](https://accruent.github.io/robotframework-zoomba/MobileLibraryDocumentation.html)
 
 
 
