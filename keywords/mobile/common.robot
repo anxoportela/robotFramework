@@ -22,5 +22,11 @@ Search Query Should Be Matching
   AppiumLibrary.Element Text Should Be  ${input_text_value}  ${text}
   AppiumLibrary.Capture Page Screenshot
 
+Search Query Should Not Be Matching
+  [Arguments]  ${text}
+  AppiumLibrary.Wait Until Page Contains Element  ${input_text_value}
+  AppiumLibrary.Element Should Not Contain Text    ${input_text_value}    ${text}
+  AppiumLibrary.Capture Page Screenshot
+
 Close Session
     AppiumLibrary.Close Application

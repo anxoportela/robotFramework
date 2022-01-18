@@ -12,3 +12,8 @@ Response Body "${key}" Should Be "${value}"
     [Documentation]    Check whether key=value in response body
     ${json}=    Set Variable   ${response.json()}
     Should Be Equal As Strings    ${json['${key}']}    ${value}
+
+Response Body "${key}" Should Not Be "${value}"
+    [Documentation]    Check whether key=value in response body
+    ${json}=    Set Variable   ${response.json()}
+    Should Not Be Equal As Strings    ${json['${key}']}    ${value}
