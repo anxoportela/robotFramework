@@ -1,5 +1,6 @@
 *** Settings ***
 Library     RequestsLibrary
+Library     DebugLibrary
 Library     Zoomba.GUILibrary
 Library     Zoomba.MobileLibrary
 Resource    ../keywords/web/web_imports.robot

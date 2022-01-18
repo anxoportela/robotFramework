@@ -11,5 +11,6 @@ Click On Tab "${tab_name}"
 Scroll To Bottom
     Zoomba.GUILibrary.scroll to bottom of page
     ${position} =                Execute Javascript        return window.pageYOffset
+    # Debug If    ${position} > 700
     Should Be True               ${position} > 700
     Zoomba.GUILibrary.Capture Page Screenshot
