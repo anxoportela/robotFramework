@@ -2,10 +2,9 @@ import fnmatch
 import os
 import pandas as pd
 
-df = pd.read_excel('resources/testing.xlsx')
-
 
 def tests():
+    df = pd.read_excel('resources/testing.xlsx')
     result = []
     for row in df.itertuples():
         if row.Run == "Y":
