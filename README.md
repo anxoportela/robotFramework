@@ -58,7 +58,9 @@
 
 #### Appium Android Configuration
 
-:building_construction: WORK IN PROGRESS :building_construction:
+:building_construction: [Linux Installation](docs/APPIUM_LINUX.md) :building_construction:
+
+:building_construction: [Windows Installation](docs/APPIUM_WINDOWS.md) :building_construction:
 
 
 
