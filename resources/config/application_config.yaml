@@ -15,6 +15,6 @@ chrome_options:
 
 #appium
 ANDROID_AUTOMATION_NAME: UIAutomator2
-ANDROID_APP: /home/anxo/Descargas/ApiDemos-debug.apk
+ANDROID_APP: C:\Users\anxo.portelainsuabla\Downloads\ApiDemos-debug.apk
 ANDROID_PLATFORM_NAME: Android
 ANDROID_PLATFORM_VERSION: "%{ANDROID_PLATFORM_VERSION=11}"
