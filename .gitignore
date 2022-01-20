@@ -1,2 +1,3 @@
 .idea/
-result*/
+results/
+*/__pycache__/
