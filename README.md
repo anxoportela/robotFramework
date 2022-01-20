@@ -105,6 +105,7 @@
 ### How to launch Testsuites
 
 - Open the excel file on ` resources/testing.xlsx ` , write the name of the ` *.robot ` testcase and set the ` Run ` variable yo ` Y ` or ` N `
+
 ![](docs/10.PNG)
 - To run the suite and clean the reports folder, on local or on the jenkins pipeline, make use of the provided makefile.
     - Run Test Suites: ` make test `
