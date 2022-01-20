@@ -32,13 +32,4 @@ clean-build: ## remove build artifacts
 	rm -rf result*/
 
 test: ## run robotframework all tests
-	robot -d result -L TRACE -b debug.log testcases/
-
-test-api: ## run robotframework tests api
-	robot -d result-api -L TRACE -b debug.log testcases/api/
-
-test-web: ## run robotframework tests web
-	robot -d result-web -L TRACE -b debug.log testcases/web/
-
-test-mobile: ## run robotframework tests mobile
-	robot -d result-mobile -L TRACE -b debug.log testcases/mobile/
+	python libs/ExcelRunner.py

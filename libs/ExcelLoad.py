@@ -1,11 +1,9 @@
 import pandas as pd
-from robot.libraries.BuiltIn import BuiltIn
-
-suite_path = BuiltIn().get_variable_value("${SUITE SOURCE}")
+from robot.libraries.BuiltIn import BuiltIn as b
 
 
-def print_whoami():
-    tmp = suite_path.split("/")
+def whoami():
+    tmp = b().get_variable_value("${SUITE SOURCE}").split("/")
     tmp.reverse()
     out = tmp[0].split(".")[0]
     return out
@@ -14,5 +12,8 @@ def print_whoami():
 def load_data():
     df = pd.read_excel('resources/testing.xlsx')
     for row in df.itertuples():
-        if row.TestName == print_whoami():
+        if row.TestName == whoami():
             return row
+
+
+exceldata = load_data()
