@@ -28,6 +28,7 @@
 - Node v17.3
 - Android Studio 2020.3
 - OpenJDK Runtime Environment (build 1.8.0_312-b10)
+- :warning:Only Windows -> ` choco install make `
 
 
 
@@ -70,11 +71,7 @@ All test are launched through the Makefile file, either you click the :play_or_p
 
 Here you have the various options:
 
- - Clean the project: ` make clean `
- - Run all Testsuites: ` make test `
- - Run only specific suites:
-    - Backend: ` make test-api `
-    - Frontend: ` make test-web `
-    - Mobile: ` make test-mobile `
+ - Clean Project: ` make clean `
+ - Run Test Suites: ` make test `
 
 Results can be found on the results-{api|web|mobile} folder.
