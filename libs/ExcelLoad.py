@@ -1,5 +1,6 @@
 import pandas as pd
 from robot.libraries.BuiltIn import BuiltIn as b
+from pathlib import Path as p
 
 
 def whoami():
@@ -10,7 +11,8 @@ def whoami():
 
 
 def load_data():
-    df = pd.read_excel('resources/testing.xlsx')
+    excel = p('resources/testing.xlsx')
+    df = pd.read_excel(excel)
     for row in df.itertuples():
         if row.TestName == whoami():
             return row
