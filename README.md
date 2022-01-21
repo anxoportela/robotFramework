@@ -144,7 +144,7 @@
 
 ![](docs/10.PNG)
 
-- Edit ` resources/config/application_config.yaml `, and set ` excel_sheet ` variable to the workbook sheet that you want to run.
+- Edit ` resources/config/application_config.yaml `, set ` excel_file` to the relative path on your project directory where it's located and ` excel_sheet ` to the workbook sheet to run.
 - To run the suite and clean the report's folder, both on local and jenkins, make use of the provided makefile.
     - Run Test Suites: ` make test `
     - Clean Project: ` make clean `

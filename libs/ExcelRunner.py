@@ -6,8 +6,8 @@ from pathlib import Path as p
 
 
 def tests():
-    excel = p('resources/testing.xlsx')
-    df = pd.read_excel(excel, sheet_name=c.read_cfg())
+    excel = p(c.read_cfg('excel_file'))
+    df = pd.read_excel(excel, sheet_name=c.read_cfg('excel_sheet'))
     result = []
     for row in df.itertuples():
         if row.Run == "Y":

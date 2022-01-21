@@ -3,12 +3,12 @@ from datetime import datetime as d
 from robot.libraries.BuiltIn import BuiltIn as b
 
 
-def read_cfg():
+def read_cfg(cfg):
     file = open('resources/config/application_config.yaml')
     for lines in file:
         items = lines.split(': ')
-        if items[0] == 'excel_sheet':
-            return items[1]
+        if items[0] == cfg:
+            return items[1].strip()
 
 
 def dt_now():
