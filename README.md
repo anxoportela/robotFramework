@@ -7,7 +7,8 @@
     + [Base Project](#base-project)
     + [Project Configuration](#project-configuration)
     + [Appium Android Configuration](#appium-android-configuration)
-- [How to launch Testsuites](#how-to-launch-testsuites)
+- [How to launch Test Suites](#how-to-launch-test-suites)
+- [Appendix](#appendix)
 
 ### Introduction
 
@@ -102,12 +103,22 @@
  - Once the device it's open you can close Android Studio and every tool related to it.
 
 
-### How to launch Testsuites
+### How to launch Test Suites
 
-- Open the excel file on ` resources/testing.xlsx ` , write the name of the ` *.robot ` testcase and set the ` Run ` variable yo ` Y ` or ` N `
+- Open the excel file on ` resources/testing.xlsx ` , write the name of the ` *.robot ` testcase and set the ` Run ` variable to ` Y ` or ` N `  
 
 ![](docs/10.PNG)
-- To run the suite and clean the reports folder, on local or on the jenkins pipeline, make use of the provided makefile.
+- To run the suite and clean the report's folder, both on local and jenkins, make use of the provided makefile.
     - Run Test Suites: ` make test `
     - Clean Project: ` make clean `
 - Results can be found on the results/[date] folder.
+
+
+### Appendix
+
+ - Create a desktop shortcut to only open the virtual device
+   - Go to your user directory ` AppData\Local\Android\Sdk\emulator ` and make a shortcut of ` emulator ` and paste it on your desktop
+[](docs/15.PNG)
+   - Edit the shortcut copied above
+[](docs/16.PNG)
+
