@@ -1,14 +1,16 @@
-#web
-gh_url: https://github.com/anxoportela
-browser: chrome
-account_name: anxoportela
-explicit_timeout: 10s
+#project
+excel_file: resources/testing.xlsx
+excel_sheet: Web
+tests_folder: testcases
+log_info: INFO
 
 #chrome_options
 chrome_options:
   #  - --headless
   - --disable-gpu
 
-#exceldata
-excel_file: resources/testing.xlsx
-excel_sheet: Web
+#web
+gh_url: https://github.com/anxoportela
+browser: chrome
+account_name: anxoportela
+explicit_timeout: 10s
