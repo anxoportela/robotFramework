@@ -134,6 +134,8 @@
 ![](docs/09.PNG)
 
  - Once the device it's open you can close Android Studio and every tool related to it.
+ - Download the [Demo APK](https://github.com/appium/appium/blob/master/sample-code/apps/ApiDemos-debug.apk), edit ` resources/config/application_config.yaml `, and set ` ANDROID_APP ` variable to the downloaded application.
+ 
 
 
 ### How to launch Test Suites
@@ -141,6 +143,8 @@
 - Open the excel file on ` resources/testing.xlsx ` , write the name of the ` *.robot ` testcase and set the ` Run ` variable to ` Y ` or ` N `  
 
 ![](docs/10.PNG)
+
+- Edit ` resources/config/application_config.yaml `, and set ` excel_sheet ` variable to the workbook sheet that you want to run.
 - To run the suite and clean the report's folder, both on local and jenkins, make use of the provided makefile.
     - Run Test Suites: ` make test `
     - Clean Project: ` make clean `
