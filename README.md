@@ -118,7 +118,7 @@
 
  - Create a desktop shortcut to only open the virtual device
    - Go to your user directory ` AppData\Local\Android\Sdk\emulator ` and make a shortcut of ` emulator ` and paste it on your desktop
-[](docs/15.PNG)
+![](docs/15.PNG)
    - Edit the shortcut copied above
-[](docs/16.PNG)
+![](docs/16.PNG)
 
