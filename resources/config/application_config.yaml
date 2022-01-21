@@ -4,4 +4,5 @@ get_users: /users
 
 
 #exceldata
+excel_file: resources/testing.xlsx
 excel_sheet: Api
