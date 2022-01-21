@@ -9,6 +9,8 @@
     + [Appium Android Configuration](#appium-android-configuration)
 - [How to launch Test Suites](#how-to-launch-test-suites)
 - [Appendix](#appendix)
+    + [AVD Desktop Shortcut](#avd-desktop-shortcut)
+    + [UI Automator Viewer](#ui-automator-viewer)
 
 ### Introduction
 
@@ -67,11 +69,19 @@
 #### Project Configuration
 
  - Open ` File -> Project Structure ` and select ` Python 3.10 ` as SDK
-![](docs/11.PNG)
+
+ ![](docs/11.PNG)
+ 
  - Select the interpreter
-![](docs/12.PNG) ![](docs/13.PNG)
- - Check that classpath was loaded correctly
+ 
+ ![](docs/12.PNG) 
+ 
+![](docs/13.PNG)
+
+ -Check that classpath was loaded correctly
+
 ![](docs/14.PNG)
+
  - Maybe some reload needed between actions
 
 
@@ -80,26 +90,46 @@
  - Download and install the [Appium Desktop Application](https://github.com/appium/appium-desktop/releases/latest)
  - Open Android Studio and create a new project. The basic one is enough, it's only to install the required dependencies.
  - When all downloads are done, open AVD (Android Virtual Device Manager)
+
 ![](docs/00.PNG)
+
  - Click on create a new virtual device
+
 ![](docs/01.PNG)
+
  - Choose the __Pixel 4 XL__
+
 ![](docs/02.PNG)
+
  - Click on the __x86 Images__ tab and download __Android 11__
+
 ![](docs/03.PNG)
+
  - Name the new virtual machine __Android 11__, and finish the installation.
+
 ![](docs/04.PNG)
+
  - Open the environment variables editor and add ` ANDROID_HOME ` as a new system variable. Change your path accordingly.
+
 ![](docs/05.PNG)
+
  - Edit your system path to add a series of variables.
+
 ![](docs/06.PNG)
+
  - Reboot your system
  - Now you can open the Appium application and start the server.
+
 ![](docs/07.PNG)
+
  - And open Android Studio again and start the virtual machine.
+
 ![](docs/00.PNG)
+
 ![](docs/08.PNG)
+
 ![](docs/09.PNG)
+
  - Once the device it's open you can close Android Studio and every tool related to it.
 
 
@@ -116,9 +146,26 @@
 
 ### Appendix
 
- - Create a desktop shortcut to only open the virtual device
-   - Go to your user directory ` AppData\Local\Android\Sdk\emulator ` and make a shortcut of ` emulator ` and paste it on your desktop
+
+#### AVD Desktop Shortcut
+
+- Go to your user directory ` AppData\Local\Android\Sdk\emulator ` and make a shortcut of ` emulator ` and paste it on your desktop
+   
 ![](docs/15.PNG)
-   - Edit the shortcut copied above
+
+- Edit the shortcut copied above
+
 ![](docs/16.PNG)
+
+
+#### UI Automator Viewer
+
+ - Go to your user directory ` AppData\Local\Android\Sdk\tools\bin ` and make a shortcut of ` uiautomatorviewer ` and paste it on your desktop
+
+![](docs/17.PNG)
+
+ - Now you can view the application's ids to use on your mobile testcases
+
+![](docs/18.PNG)
+
 
