@@ -1,13 +1,13 @@
-import pandas as pd
 import Common as c
-from pathlib import Path as f
+import pandas as pd
+from pathlib import Path as p
+from robot.libraries.BuiltIn import BuiltIn as b
 
 
 def load_data():
-    excel = f(c.read_cfg('excel_file'))
-    df = pd.read_excel(excel, sheet_name=c.read_cfg('excel_sheet'))
+    df = pd.read_excel(p(c.read_cfg('excel_file')), sheet_name=c.read_cfg('excel_sheet'))
     for row in df.itertuples():
-        if row.TestName == c.whoami():
+        if row.TestName == p(b().get_variable_value("${SUITE SOURCE}")).stem:
             return row
 
 

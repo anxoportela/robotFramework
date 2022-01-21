@@ -1,8 +1,9 @@
+#project
+excel_file: resources/testing.xlsx
+excel_sheet: Web
+tests_folder: testcases
+log_info: INFO
+
 #api
 gh_api: https://api.github.com
 get_users: /users
-
-
-#exceldata
-excel_file: resources/testing.xlsx
-excel_sheet: Api
