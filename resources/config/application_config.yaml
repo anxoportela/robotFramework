@@ -10,4 +10,5 @@ chrome_options:
   - --disable-gpu
 
 #exceldata
+excel_file: resources/testing.xlsx
 excel_sheet: Web
