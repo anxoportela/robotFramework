@@ -28,6 +28,8 @@
 
 ### Pre-Requisites
 
+#####  :warning: __Execute as administrator!__ :warning:
+
 - IntelliJ 2021.3 -> ` choco install intellijidea-community `
 - Python 3.10 -> ` choco install python3 `
 - Node v17.3 -> ` choco install nodejs `
