@@ -1,3 +1,14 @@
+#project
+excel_file: resources/testing.xlsx
+excel_sheet: Web
+tests_folder: testcases
+log_info: INFO
+
+#chrome_options
+chrome_options:
+  #  - --headless
+  - --disable-gpu
+
 #web
 gh_url: https://github.com/anxoportela
 browser: chrome
@@ -8,17 +19,8 @@ explicit_timeout: 10s
 gh_api: https://api.github.com
 get_users: /users
 
-#chrome_options
-chrome_options:
-  #  - --headless
-  - --disable-gpu
-
 #appium
 ANDROID_AUTOMATION_NAME: UIAutomator2
 ANDROID_APP: C:\APKs\ApiDemos-debug.apk
 ANDROID_PLATFORM_NAME: Android
 ANDROID_PLATFORM_VERSION: "%{ANDROID_PLATFORM_VERSION=11}"
-
-#exceldata
-excel_file: resources/testing.xlsx
-excel_sheet: Web
