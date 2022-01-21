@@ -5,8 +5,8 @@ Resource    ../../../resources/imports.robot
 I Open My GitHub URL "${url}" With Browser "${browser}"
     [Documentation]    Open GitHub URL with specified browser
     Run Keyword If    '${browser.lower()}' == 'chrome'    Open Chrome Headless Browser    ${url}    ELSE    Open Other Browsers    ${url}    ${browser}
-    Zoomba.GUILibrary.Wait Until Page Contains   ${account_name}    timeout=${explicit_timeout}
-    Zoomba.GUILibrary.Capture Page Screenshot
+    Wait Until Page Contains   ${account_name}    timeout=${explicit_timeout}
+    Capture Page Screenshot
 
 
 Open Other Browsers
