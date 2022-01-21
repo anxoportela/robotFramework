@@ -1,23 +1,8 @@
-#web
-gh_url: https://github.com/anxoportela
-browser: chrome
-account_name: anxoportela
-explicit_timeout: 10s
-
-#api
-gh_api: https://api.github.com
-get_users: /users
-
-#chrome_options
-chrome_options:
-  #  - --headless
-  - --disable-gpu
-
 #appium
 ANDROID_AUTOMATION_NAME: UIAutomator2
-ANDROID_APP: C:\Users\anxo.portelainsuabla\Downloads\ApiDemos-debug.apk
+ANDROID_APP: /home/anxo/Descargas/ApiDemos-debug.apk
 ANDROID_PLATFORM_NAME: Android
 ANDROID_PLATFORM_VERSION: "%{ANDROID_PLATFORM_VERSION=11}"
 
 #exceldata
-excel_sheet: Api
+excel_sheet: Mobile
