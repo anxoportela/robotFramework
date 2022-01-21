@@ -18,3 +18,6 @@ ANDROID_AUTOMATION_NAME: UIAutomator2
 ANDROID_APP: C:\Users\anxo.portelainsuabla\Downloads\ApiDemos-debug.apk
 ANDROID_PLATFORM_NAME: Android
 ANDROID_PLATFORM_VERSION: "%{ANDROID_PLATFORM_VERSION=11}"
+
+#exceldata
+excel_sheet: Api

@@ -1,13 +1,13 @@
 import fnmatch as f
 import os
 import pandas as pd
-from datetime import datetime as d
+import Common as utils
 from pathlib import Path as p
 
 
 def tests():
     excel = p('resources/testing.xlsx')
-    df = pd.read_excel(excel)
+    df = pd.read_excel(excel, sheet_name=utils.read_cfg())
     result = []
     for row in df.itertuples():
         if row.Run == "Y":
@@ -20,9 +20,7 @@ def tests():
 
 def runtests():
     for test in tests():
-        now = d.now()
-        dt_string = now.strftime("%Y%m%d_%H%M%S")
-        os.system("robot -d results/" + dt_string + " -L TRACE -b debug.log " + test)
+        os.system("robot -d results/" + utils.dt_now() + " -L TRACE -b debug.log " + test)
 
 
 runtests()
