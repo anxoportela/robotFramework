@@ -1,13 +1,13 @@
 import pandas as pd
-import Common as utils
+import Common as c
 from pathlib import Path as f
 
 
 def load_data():
     excel = f('resources/testing.xlsx')
-    df = pd.read_excel(excel, sheet_name=utils.read_cfg())
+    df = pd.read_excel(excel, sheet_name=c.read_cfg())
     for row in df.itertuples():
-        if row.TestName == utils.whoami():
+        if row.TestName == c.whoami():
             return row
 
 

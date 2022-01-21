@@ -1,13 +1,13 @@
 import fnmatch as f
 import os
 import pandas as pd
-import Common as utils
+import Common as c
 from pathlib import Path as p
 
 
 def tests():
     excel = p('resources/testing.xlsx')
-    df = pd.read_excel(excel, sheet_name=utils.read_cfg())
+    df = pd.read_excel(excel, sheet_name=c.read_cfg())
     result = []
     for row in df.itertuples():
         if row.Run == "Y":
@@ -20,7 +20,7 @@ def tests():
 
 def runtests():
     for test in tests():
-        os.system("robot -d results/" + utils.dt_now() + " -L TRACE -b debug.log " + test)
+        os.system("robot -d results/" + c.dt_now() + " -L TRACE -b debug.log " + test)
 
 
 runtests()

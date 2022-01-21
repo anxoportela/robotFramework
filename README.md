@@ -57,10 +57,10 @@
 
 - Clone the repo:
     - Option A: Use your prefered git gui
-    - Option B: Use embedded IntelliJ/PyCharm git interface
+    - Option B: Use embedded IntelliJ git interface
     - Option C:
     
-    ` git clone -b master --single-branch https://github.com/anxoportela/robotFramework.git saveFolder `
+    ` git clone -b <branch-name> --single-branch https://github.com/anxoportela/robotFramework.git saveFolder `
 
 - Open an administrator system terminal on the project root and install the required python packages:
 
