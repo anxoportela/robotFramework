@@ -1,9 +1,11 @@
+#project
+excel_file: resources/testing.xlsx
+excel_sheet: Web
+tests_folder: testcases
+log_info: INFO
+
 #appium
 ANDROID_AUTOMATION_NAME: UIAutomator2
 ANDROID_APP: /home/anxo/Descargas/ApiDemos-debug.apk
 ANDROID_PLATFORM_NAME: Android
 ANDROID_PLATFORM_VERSION: "%{ANDROID_PLATFORM_VERSION=11}"
-
-#exceldata
-excel_file: resources/testing.xlsx
-excel_sheet: Mobile
