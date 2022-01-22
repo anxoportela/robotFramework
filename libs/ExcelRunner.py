@@ -27,11 +27,12 @@ def runtests():
                 if row.Run.lower() == "y":
                     file_test = glob.glob(c.read_cfg('tests_folder') + "/**/" + row.TestName + ".robot")
                     if file_test:
-                        if row.Device.lower() == "chrome":
+                        if row.Device.lower() == "chrome" and os.name != 'nt':
                             ci.install()
-                        elif row.Device.lower() == "firefox":
+                        elif row.Device.lower() == "firefox" and os.name != 'nt':
                             gi.install()
-                        os.system("robot -d results/{0}/{1} -L {2} -b debug.log {3}".
+                        os.system("robot -d results/{0}/{1} -L {2} -b debug.log {3} && robotmetrics -I "
+                                  "results/{0}/{1} -M results/{0}/{1}/metrics.html".
                                   format(now, row.TestName, c.read_cfg('log_info'), file_test[0]))
                     else:
                         c.print_error("No test file named '{0}' found".format(row.TestName + ".robot"))

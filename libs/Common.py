@@ -1,5 +1,9 @@
 import os
 from datetime import datetime as d
+from colorama import init
+from termcolor import colored
+
+init(autoreset=True)
 
 
 def read_cfg(cfg):
@@ -21,17 +25,13 @@ def d_now(opt):
         return d.now().strftime("%Y%m%d_%H%M%S")
 
 
-def colorize_text(r, g, b, text):
-    return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, text)
-
-
 def print_warning(msg):
-    print("[" + d_now("l") + "] " + colorize_text(255, 255, 0, "WARNING:") + msg)
+    print("[ {0} ] {1}: {2}".format(d_now("l"), colored("WARNING", 'yellow'), msg))
 
 
 def print_error(msg):
-    print("[" + d_now("l") + "] " + colorize_text(255, 0, 0, "ERROR:") + msg)
+    print("[ {0} ] {1}: {2}".format(d_now("l"), colored("ERROR", 'red'), msg))
 
 
 def print_success(msg):
-    print("[" + d_now("l") + "] " + colorize_text(0, 255, 0, "SUCCESS:") + msg)
+    print("[ {0} ] {1}: {2}".format(d_now("l"), colored("SUCCESS", 'green'), msg))
