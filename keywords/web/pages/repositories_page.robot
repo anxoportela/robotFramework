@@ -8,14 +8,14 @@ Type Search Keyword "${search_keyword}"
     Input Text    ${search_box}    ${search_keyword}
     Capture Page Screenshot
     Press Keys    ${search_box}    RETURN
-    Wait Until Element Is Visible    css=a.issues-reset-query    timeout=${explicit_timeout}
+    Wait Until Element Is Visible    css=a.issues-reset-query    timeout=${explicit_timeouts.short}
 
 "${repository}" Should Be Found
     [Documentation]    Verify that specified repository is found.
-    Page Should Contain Link    default=/${account_name}/${repository}
+    Page Should Contain Link    default=/anxoportela/${repository}
     Capture Page Screenshot
 
 Search Result Should Not Be Found
     [Documentation]    Expect search result not found.
-    Page Should Contain    ${account_name} doesn’t have any repositories that match.
+    Page Should Contain    anxoportela doesn’t have any repositories that match.
     Capture Page Screenshot

@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     Test My GitHub Web
 Resource          ../../resources/imports.robot
-Test Setup        Given I Open My GitHub URL "${gh_url}" With Browser "${browser}"
+Test Setup        Open URL "${exceldata.Url}" With Browser "${exceldata.Device}"
 Test Teardown     Close Browser
 Default Tags    web
 
