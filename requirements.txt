@@ -8,4 +8,6 @@ robotframework-appiumlibrary==1.6.3
 robotframework-zoomba==2.13.1
 robotframework-debuglibrary==2.2.2
 pandas~=1.3.5
-openpyxl==3.0.9
+openpyxl~=3.0.9
+chromedriver-autoinstaller
+geckodriver-autoinstaller

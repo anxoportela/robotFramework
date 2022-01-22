@@ -29,7 +29,7 @@ help:
 clean: clean-build
 
 clean-build: ## remove build artifacts
-	rm -rf result*/
+	rm -rf geckodriver.log results/
 
 test: ## run robotframework all tests
 	python libs/ExcelRunner.py

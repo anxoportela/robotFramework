@@ -1,16 +1,28 @@
 #project
+config_file: resources/config/application_config.yaml
 excel_file: resources/testing.xlsx
 excel_sheet: Web
 tests_folder: testcases
 log_info: INFO
+explicit_timeouts:
+  short: 15s
+  medium: 30s
+  long: 60s
 
-#chrome_options
+#chrome options
 chrome_options:
   #  - --headless
+  #  - --auto-open-devtools-for-tabs
   - --disable-gpu
+  - --no-sandbox
+  - --disable-dev-shm-usage
+  - --disable-extensions
+  - --disable-infobars
+  - --disable-default-apps
+  - --disable-popup-blocking
 
-#web
-gh_url: https://github.com/anxoportela
-browser: chrome
-account_name: anxoportela
-explicit_timeout: 10s
+#firefox options
+firefox_options:
+  #  - --headless
+  - --no-sandbox
+  - --disable-dev-shm-usage
