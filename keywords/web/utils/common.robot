@@ -34,8 +34,8 @@ Set Chrome Options
 
 Set Firefox Options
     [Documentation]    Set Firefox Options
-    ${options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
-    FOR    ${option}    IN    @{chrome_options}
+    ${options}=    Evaluate    sys.modules['selenium.webdriver'].FirefoxOptions()    sys, selenium.webdriver
+    FOR    ${option}    IN    @{firefox_options}
         Call Method    ${options}    add_argument    ${option}
     END
     [Return]    ${options}
