@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../../../resources/imports.robot
+Resource    ../../resources/imports.robot
 
 *** Keywords ***
 Open URL "${url}" With Browser "${browser}"
