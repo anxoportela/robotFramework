@@ -3,14 +3,6 @@ Resource    ../../resources/imports.robot
 
 
 *** Keywords ***
-Get Token Bearer
-    [Documentation]     Get token
-    Create Session    GetToken     ${token_url}
-    ${json}=    Get Binary File    ${body_json_dir}/${token_json}
-    ${response}=    Post On Session     GetToken       ${token_endpoint}       data=${json}        headers=&{headers}
-    ${tokenCorp}=   Get Value From Json    ${response.json()}    tokenCorp
-    Set Suite Variable    ${tokenCorp}       ${tokenCorp}
-
 POST Request From "${url}" With Endpoint "${endpoint}" And JSON File "${data_json}" And Headers "${custom_headers}"
     [Documentation]     POST Response from API
     Create Session    PostResponse     ${url}
