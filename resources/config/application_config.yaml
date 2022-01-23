@@ -1,9 +1,25 @@
-#project
+#project settings
+config_file: resources/config/application_config.yaml
 excel_file: resources/testing.xlsx
-excel_sheet: Web
+excel_sheet: Api
 tests_folder: testcases
-log_info: INFO
+log_info: TRACE
+explicit_timeouts:
+  short: 15s
+  medium: 30s
+  long: 60s
 
-#api
-gh_api: https://api.github.com
-get_users: /users
+#api settings
+data_json_dir: ${CURDIR}/../resources/json/data
+headers_json_dir: ${CURDIR}/../resources/json/headers
+headers:
+  Content-Type: application/json
+  Accept-Encoding: gzip, deflate, br
+  Connection: keep-alive
+  Accept: '*/*'
+  charset: utf-8
+
+#token settings
+token_url: https://srvnuarintra.santander.dev.corp
+token_endpoint: /sas/authenticate/credentials
+token_json: token.json
