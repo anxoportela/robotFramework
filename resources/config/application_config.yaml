@@ -1,11 +1,26 @@
-#project
+#project configuration
+config_file: resources/config/application_config.yaml
 excel_file: resources/testing.xlsx
-excel_sheet: Web
+excel_sheet: Mobile
+platform: Android
 tests_folder: testcases
 log_info: INFO
+explicit_timeouts:
+  short: 15s
+  medium: 30s
+  long: 60s
 
-#appium
+#appium android configuration
 ANDROID_AUTOMATION_NAME: UIAutomator2
-ANDROID_APP: /home/anxo/Descargas/ApiDemos-debug.apk
+ANDROID_APP: ApiDemos-debug.apk
+ANDROID_APP_DIR: appTesting/Android
 ANDROID_PLATFORM_NAME: Android
 ANDROID_PLATFORM_VERSION: "%{ANDROID_PLATFORM_VERSION=11}"
+
+#appium ios configuration
+IOS_AUTOMATION_NAME: XCUITest
+IOS_APP: TestApp.app.zip
+IOS_APP_DIR: appTesting/iOS
+IOS_PLATFORM_NAME: iOS
+IOS_PLATFORM_VERSION: "%{IOS_PLATFORM_VERSION=13.6}"
+IOS_DEVICE_NAME: iPhone 8

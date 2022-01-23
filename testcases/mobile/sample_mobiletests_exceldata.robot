@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Simple example using AppiumLibrary
 Resource          ../../resources/imports.robot
-Test Setup        Given Open Test Application
+Test Setup        Run Test On '${platform}'
 Test Teardown     Close Session
 Default Tags    mobile
 
