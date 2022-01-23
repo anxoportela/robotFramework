@@ -10,7 +10,7 @@ explicit_timeouts:
   long: 60s
 
 #api settings
-data_json_dir: ${CURDIR}/../resources/json/data
+body_json_dir: ${CURDIR}/../resources/json/body
 headers_json_dir: ${CURDIR}/../resources/json/headers
 headers:
   Content-Type: application/json
