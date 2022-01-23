@@ -7,21 +7,21 @@ from openpyxl import load_workbook as lw
 
 
 def runtests():
-    if not c.read_cfg('platform'):
-        c.print_error("Set the 'platform' variable on '{0}' to 'Android' or 'iOS'".format(c.read_cfg('config_file')))
+    if not c.read_cfg('device'):
+        c.print_error("Set the 'device' variable on '{0}' to 'Android' or 'iOS'".format(c.read_cfg('config_file')))
         quit()
-    elif c.read_cfg('platform').lower() == 'android' and not os.path.isfile(c.read_cfg('ANDROID_APP_DIR') +
-                                                                            "/" + c.read_cfg('ANDROID_APP')):
+    elif c.read_cfg('device').lower() == 'android' and not os.path.isfile(c.read_cfg('ANDROID_APP_DIR') +
+                                                                          "/" + c.read_cfg('ANDROID_APP')):
         c.print_error("No Android APK found on '{0}' with name '{1}'".
                       format(c.read_cfg('ANDROID_APP_DIR'), c.read_cfg('ANDROID_APP')))
         quit()
-    elif c.read_cfg('platform').lower() == 'ios' and not os.path.isfile(c.read_cfg('IOS_APP_DIR') +
-                                                                        "/" + c.read_cfg('IOS_APP')):
+    elif c.read_cfg('device').lower() == 'ios' and not os.path.isfile(c.read_cfg('IOS_APP_DIR') +
+                                                                      "/" + c.read_cfg('IOS_APP')):
         c.print_error("No iOS APP found on '{0}' with name '{1}'".
                       format(c.read_cfg('IOS_APP_DIR'), c.read_cfg('IOS_APP')))
         quit()
-    elif c.read_cfg('platform').lower() != 'ios' and c.read_cfg('platform').lower() != 'android':
-        c.print_error("The 'platform' variable set on '{0}' is incorrect, choose 'Android' or 'iOS'".
+    elif c.read_cfg('device').lower() != 'ios' and c.read_cfg('device').lower() != 'android':
+        c.print_error("The 'device' variable set on '{0}' is incorrect, choose 'Android' or 'iOS'".
                       format(c.read_cfg('config_file')))
         quit()
     wb = lw(p(c.read_cfg('excel_file'), read_only=True))

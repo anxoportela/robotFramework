@@ -2,7 +2,7 @@
 config_file: resources/config/application_config.yaml
 excel_file: resources/testing.xlsx
 excel_sheet: Mobile
-platform: Android
+device: Android
 tests_folder: testcases
 log_info: INFO
 explicit_timeouts:

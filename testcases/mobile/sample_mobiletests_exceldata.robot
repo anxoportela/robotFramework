@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation  Simple example using AppiumLibrary
 Resource          ../../resources/imports.robot
-Test Setup        Run Test On '${platform}'
+Test Setup        Run Test On '${device}'
 Test Teardown     Close Session
 Default Tags    mobile
 
