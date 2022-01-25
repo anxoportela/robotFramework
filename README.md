@@ -37,6 +37,7 @@
 - Android Studio 2020.3 -> ` choco install androidstudio `
 - Java JDK 8 -> ` choco install jdk8 `
 - Chromedriver -> ` choco install chromedriver `
+- Geckodriver -> ` choco install selenium-gecko-driver `
 - Make -> ` choco install make `
 
 
