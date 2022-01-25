@@ -172,56 +172,56 @@ get button_contains_value
 
 #divbyclass = xpath//div[@class="%%"]
 get div_by_class
-    [Documentation]     Get div by class "xpath=//div[@class='%%']"
+    [Documentation]     Get division by class "xpath=//div[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //div[@class='${class}']
     [Return]    ${element}
 
 #divbyid = xpath//div[@id="%%"]
 get div_by_id
-    [Documentation]     Get div by id "xpath=//div[@id='%%']"
+    [Documentation]     Get division by id "xpath=//div[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //div[@id='${id}']
     [Return]    ${element}
 
 #divbytext = xpath//div[text()='%%']
 get div_by_text
-    [Documentation]     Get div by text "xpath=//div[text()='%%']"
+    [Documentation]     Get division by text "xpath=//div[text()='%%']"
     [Arguments]    ${text}
     ${element}=    Get WebElement      //div[text()='${text}']
     [Return]    ${element}
 
 #divbytitle = xpath//div[@title='%%']
 get div_by_title
-    [Documentation]     Get div by title "xpath=//div[@title='%%']"
+    [Documentation]     Get division by title "xpath=//div[@title='%%']"
     [Arguments]    ${title}
     ${element}=    Get WebElement      //div[@title='${title}']
     [Return]    ${element}
 
 #divcontainsclass = xpath//div[contains(@class,'%%')]
 get div_contains_class
-    [Documentation]     Get div that contains class "xpath=//div[contains(@class,'%%')]"
+    [Documentation]     Get division that contains class "xpath=//div[contains(@class,'%%')]"
     [Arguments]     ${class}
     ${element}=     Get WebElement        //div[contains(@class,"${class}")]
     [Return]    ${element}
 
 #divcontainsid = xpath//div[contains(@id,'%%')]
 get div_contains_id
-    [Documentation]     Get div that contains id "xpath=//div[contains(@id,'%%')]"
+    [Documentation]     Get division that contains id "xpath=//div[contains(@id,'%%')]"
     [Arguments]     ${id}
     ${element}=     Get WebElement        //div[contains(@id,"${id}")]
     [Return]    ${element}
 
 #divcontainstext = xpath//div[contains(text(),'%%')]
 get div_contains_text
-    [Documentation]     Get div that contains text "xpath=//div[contains(text(),'%%')]"
+    [Documentation]     Get division that contains text "xpath=//div[contains(text(),'%%')]"
     [Arguments]     ${text}
     ${element}=     Get WebElement        //div[contains(text(),"${text}")]
     [Return]    ${element}
 
 #divcontainstitle = xpath//div[contains(@title,'%%')]
 get div_contains_title
-    [Documentation]     Get div that contains title "xpath=//div[contains(@title,'%%')]"
+    [Documentation]     Get division that contains title "xpath=//div[contains(@title,'%%')]"
     [Arguments]     ${title}
     ${element}=     Get WebElement        //div[contains(@title,"${title}")]
     [Return]    ${element}
@@ -478,114 +478,72 @@ get header_contains_id
     ${element}=    Get WebElement      //header[contains(@id,'${id}')]
     [Return]    ${element}
 
-#ibyid = xpath//i[@id="%%"]
-get i_by_id
-    [Documentation]     Get i by id "xpath=//i[@id='%%']"
-    [Arguments]    ${id}
-    ${element}=    Get WebElement      //i[@id='${id}']
-    [Return]    ${element}
-
-#ibyclass = xpath//i[@class="%%"]
-get i_by_class
-    [Documentation]     Get i by class "xpath=//i[@class='%%']"
-    [Arguments]    ${class}
-    ${element}=    Get WebElement      //i[@class='${class}']
-    [Return]    ${element}
-
-#ibytext = xpath//i[text()="%%"]
-get i_by_text
-    [Documentation]     Get i by text "xpath=//i[text()='%%']"
-    [Arguments]    ${text}
-    ${element}=    Get WebElement      //i[text()='${text}']
-    [Return]    ${element}
-
-#icontainsid = xpath//i[contains(@id,'%%')]
-get i_contains_id
-    [Documentation]     Get i that contains id "xpath=//i[contains(@id,'%%')]"
-    [Arguments]    ${id}
-    ${element}=    Get WebElement      //i[contains(@id,'${id}')]
-    [Return]    ${element}
-
-#icontainsclass = xpath//i[contains(@class,'%%')]
-get i_contains_class
-    [Documentation]     Get i that contains class "xpath=//i[contains(@class,'%%')]"
-    [Arguments]    ${class}
-    ${element}=    Get WebElement      //i[contains(@class,'${class}')]
-    [Return]    ${element}
-
-#icontainstext = xpath//i[contains(text(),"%%")]
-get i_contains_text
-    [Documentation]     Get i that contains text "xpath=//i[contains(text(),"%%")]"
-    [Arguments]    ${text}
-    ${element}=    Get WebElement      //i[contains(text(),'${text}')]
-    [Return]    ${element}
-
 #imgbyalt = xpath//img[@alt='%%']
 get img_by_alt
-    [Documentation]     Get img by alt "xpath=//img[@alt='%%']"
+    [Documentation]     Get image by alt "xpath=//img[@alt='%%']"
     [Arguments]    ${alt}
     ${element}=    Get WebElement      //img[@alt='${alt}']
     [Return]    ${element}
 
 #imgbyid = xpath//img[@id="%%"]
 get img_by_id
-    [Documentation]     Get img by id "xpath=//img[@id='%%']"
+    [Documentation]     Get image by id "xpath=//img[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //img[@id='${id}']
     [Return]    ${element}
 
 #imgbysrc = xpath//img[@src="%%"]
 get img_by_src
-    [Documentation]     Get img by src "xpath=//img[@src='%%']"
+    [Documentation]     Get image by src "xpath=//img[@src='%%']"
     [Arguments]    ${src}
     ${element}=    Get WebElement      //img[@src='${src}']
     [Return]    ${element}
 
 #imgbytitle = xpath//img[@title="%%"]
 get img_by_title
-    [Documentation]     Get img by title "xpath=//img[@title='%%']"
+    [Documentation]     Get image by title "xpath=//img[@title='%%']"
     [Arguments]    ${title}
     ${element}=    Get WebElement      //img[@title='${title}']
     [Return]    ${element}
 
 #imgbyclass = xpath//img[@class="%%"]
 get img_by_class
-    [Documentation]     Get img by class "xpath=//img[@class='%%']"
+    [Documentation]     Get image by class "xpath=//img[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //img[@class='${class}']
     [Return]    ${element}
 
 #imgcontainssrc = xpath//img[contains(@src,'%%')]
 get img_contains_src
-    [Documentation]     Get img that contains src "xpath=//img[contains(@src,'%%')]"
+    [Documentation]     Get image that contains src "xpath=//img[contains(@src,'%%')]"
     [Arguments]    ${src}
     ${element}=    Get WebElement      //img[contains(@src,'${src}')]
     [Return]    ${element}
 
 #imgcontainsclass = xpath//img[contains(@class,'%%')]
 get img_contains_class
-    [Documentation]     Get img that contains class "xpath=//img[contains(@class,'%%')]"
+    [Documentation]     Get image that contains class "xpath=//img[contains(@class,'%%')]"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //img[contains(@class,'${class}')]
     [Return]    ${element}
 
 #imgcontainsalt = xpath//img[contains(@alt,'%%')]
 get img_contains_alt
-    [Documentation]     Get img that contains alt "xpath=//img[contains(@alt,'%%')]"
+    [Documentation]     Get image that contains alt "xpath=//img[contains(@alt,'%%')]"
     [Arguments]    ${alt}
     ${element}=    Get WebElement      //img[contains(@alt,'${alt}')]
     [Return]    ${element}
 
 #imgcontainsid = xpath//img[contains(@id,'%%')]
 get img_contains_id
-    [Documentation]     Get img that contains id "xpath=//img[contains(@id,'%%')]"
+    [Documentation]     Get image that contains id "xpath=//img[contains(@id,'%%')]"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //img[contains(@id,'${id}')]
     [Return]    ${element}
 
 #imgcontainstitle = xpath//img[contains(@title,'%%')]
 get img_contains_title
-    [Documentation]     Get img that contains title "xpath=//img[contains(title(),'%%')]"
+    [Documentation]     Get image that contains title "xpath=//img[contains(title(),'%%')]"
     [Arguments]    ${title}
     ${element}=    Get WebElement      //img[contains(title(),'${title}')]
     [Return]    ${element}
@@ -711,112 +669,112 @@ get label_contains_id
 
 #libyclass = xpath//li[@class='%%']
 get li_by_class
-    [Documentation]     Get li by class "xpath=//li[@class='%%']"
+    [Documentation]     Get list item by class "xpath=//li[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //li[@class='${class}']
     [Return]    ${element}
 
 #libyid = xpath//li[@id="%%"]
 get li_by_id
-    [Documentation]     Get li by id "xpath=//li[@id='%%']"
+    [Documentation]     Get list item by id "xpath=//li[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //li[@id='${id}']
     [Return]    ${element}
 
 #libytext = xpath//li[text()="%%"]
 get li_by_text
-    [Documentation]     Get li by text "xpath=//li[text()='%%']"
+    [Documentation]     Get list item by text "xpath=//li[text()='%%']"
     [Arguments]    ${text}
     ${element}=    Get WebElement      //li[text()='${text}']
     [Return]    ${element}
 
 #licontainstext = xpath//li[contains(text(),'%%')]
 get li_contains_text
-    [Documentation]     Get li that contains text "xpath=//li[contains(text(),"%%")]"
+    [Documentation]     Get list item that contains text "xpath=//li[contains(text(),"%%")]"
     [Arguments]    ${text}
     ${element}=    Get WebElement      //li[contains(text(),'${text}')]
     [Return]    ${element}
 
 #licontainsclass = xpath//li[contains(@class,'%%')]
 get li_contains_class
-    [Documentation]     Get li that contains class "xpath=//li[contains(@class,'%%')]"
+    [Documentation]     Get list item that contains class "xpath=//li[contains(@class,'%%')]"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //li[contains(@class,'${class}')]
     [Return]    ${element}
 
 #licontainsid = xpath//li[contains(@id,'%%')]
 get li_contains_id
-    [Documentation]     Get li that contains id "xpath=//li[contains(@id,'%%')]"
+    [Documentation]     Get list item that contains id "xpath=//li[contains(@id,'%%')]"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //li[contains(@id,'${id}')]
     [Return]    ${element}
 
 #olbyclass = xpath//ol[@class='%%']
 get ol_by_class
-    [Documentation]     Get ol by class "xpath=//ol[@class='%%']"
+    [Documentation]     Get ordered list by class "xpath=//ol[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //ol[@class='${class}']
     [Return]    ${element}
 
 #olbyid = xpath//ol[@id="%%"]
 get ol_by_id
-    [Documentation]     Get ol by id "xpath=//ol[@id='%%']"
+    [Documentation]     Get ordered list by id "xpath=//ol[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //ol[@id='${id}']
     [Return]    ${element}
 
 #olbcontainsclass = xpath//ol[contains(@class,'%%')]
 get ol_contains_class
-    [Documentation]     Get ol that contains class "xpath=//ol[contains(@class,'%%')]"
+    [Documentation]     Get ordered list that contains class "xpath=//ol[contains(@class,'%%')]"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //ol[contains(@class,'${class}')]
     [Return]    ${element}
 
 #olcontainsid = xpath//ol[contains(@id,'%%')]
 get ol_contains_id
-    [Documentation]     Get ol that contains id "xpath=//ol[contains(@id,'%%')]"
+    [Documentation]     Get ordered list that contains id "xpath=//ol[contains(@id,'%%')]"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //ol[contains(@id,'${id}')]
     [Return]    ${element}
 
 #pbyid = xpath//p[@id='%%']
 get p_by_id
-    [Documentation]     Get p by id "xpath=//p[@id='%%']"
+    [Documentation]     Get paragraph by id "xpath=//p[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //p[@id='${id}']
     [Return]    ${element}
 
 #pbyclass = xpath//p[@class='%%']
 get p_by_class
-    [Documentation]     Get p by class "xpath=//p[@class='%%']"
+    [Documentation]     Get paragraph by class "xpath=//p[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //p[@class='${class}']
     [Return]    ${element}
 
 #pcontainsclass = xpath//p[contains(@class,'%%')]
 get p_contains_class
-    [Documentation]     Get p that contains class "xpath=//p[contains(@class,'%%')]"
+    [Documentation]     Get paragraph that contains class "xpath=//p[contains(@class,'%%')]"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //p[contains(@class,'${class}')]
     [Return]    ${element}
 
 #pbytext = xpath//p[text()="%%"]
 get p_by_text
-    [Documentation]     Get p by text "xpath=//p[text()='%%']"
+    [Documentation]     Get paragraph by text "xpath=//p[text()='%%']"
     [Arguments]    ${text}
     ${element}=    Get WebElement      //p[text()='${text}']
     [Return]    ${element}
 
 #pcontainstext = xpath//p[contains(text(),'%%')]
 get p_contains_text
-    [Documentation]     Get p that contains text "xpath=//p[contains(text(),"%%")]"
+    [Documentation]     Get paragraph that contains text "xpath=//p[contains(text(),"%%")]"
     [Arguments]    ${text}
     ${element}=    Get WebElement      //p[contains(text(),'${text}')]
     [Return]    ${element}
 
 #pcontainsid = xpath//p[contains(@id,'%%')]
 get p_contains_id
-    [Documentation]     Get p that contains id "xpath=//p[contains(@id,'%%')]"
+    [Documentation]     Get paragraph that contains id "xpath=//p[contains(@id,'%%')]"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //p[contains(@id,'${id}')]
     [Return]    ${element}
@@ -1033,42 +991,42 @@ get table_contains_id
 
 #tdbyclass = xpath//td[@class="%%"]
 get td_by_class
-    [Documentation]     Get td by class "xpath=//td[@class='%%']"
+    [Documentation]     Get table data by class "xpath=//td[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //td[@class='${class}']
     [Return]    ${element}
 
 #tdbyid = xpath//td[@id="%%"]
 get td_by_id
-    [Documentation]     Get td by id "xpath=//td[@id='%%']"
+    [Documentation]     Get table data by id "xpath=//td[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //td[@id='${id}']
     [Return]    ${element}
 
 #tdbytext = xpath//td[text()="%%"]
 get td_by_text
-    [Documentation]     Get td by text "xpath=//td[text()='%%']"
+    [Documentation]     Get table data by text "xpath=//td[text()='%%']"
     [Arguments]    ${text}
     ${element}=    Get WebElement      //td[text()='${text}']
     [Return]    ${element}
 
 #tdcontainstext = xpath//td[contains(text(),'%%')]
 get td_contains_text
-    [Documentation]     Get td that contains text "xpath=//td[contains(text(),"%%")]"
+    [Documentation]     Get table data that contains text "xpath=//td[contains(text(),"%%")]"
     [Arguments]    ${text}
     ${element}=    Get WebElement      //td[contains(text(),'${text}')]
     [Return]    ${element}
 
 #tdcontainsclass = xpath//td[contains(@class,"%%")]
 get td_contains_class
-    [Documentation]     Get td that contains class "xpath=//td[contains(@class,'%%')]"
+    [Documentation]     Get table data that contains class "xpath=//td[contains(@class,'%%')]"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //td[contains(@class,'${class}')]
     [Return]    ${element}
 
 #tdcontainsid = xpath//td[contains(@id,'%%')]
 get td_contains_id
-    [Documentation]     Get td that contains id "xpath=//td[contains(@id,'%%')]"
+    [Documentation]     Get table data that contains id "xpath=//td[contains(@id,'%%')]"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //td[contains(@id,'${id}')]
     [Return]    ${element}
@@ -1110,56 +1068,56 @@ get textarea_contains_id_and_disabled
 
 #trbyid = xpath//tr[@id="%%"]
 get tr_by_id
-    [Documentation]     Get tr by id "xpath=//tr[@id='%%']"
+    [Documentation]     Get table row by id "xpath=//tr[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //tr[@id='${id}']
     [Return]    ${element}
 
 #trbyclass = xpath//tr[@class="%%"]
 get tr_by_class
-    [Documentation]     Get tr by class "xpath=//tr[@class='%%']"
+    [Documentation]     Get table row by class "xpath=//tr[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //tr[@class='${class}']
     [Return]    ${element}
 
 #trcontainsclass = xpath//tr[contains(@class,'%%')]
 get tr_contains_class
-    [Documentation]     Get tr that contains class "xpath=//tr[contains(@class,'%%')]"
+    [Documentation]     Get table row that contains class "xpath=//tr[contains(@class,'%%')]"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //tr[contains(@class,'${class}')]
     [Return]    ${element}
 
 #trcontainsid = xpath//tr[contains(@id,'%%')]
 get tr_contains_id
-    [Documentation]     Get tr that contains id "xpath=//tr[contains(@id,'%%')]"
+    [Documentation]     Get table row that contains id "xpath=//tr[contains(@id,'%%')]"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //tr[contains(@id,'${id}')]
     [Return]    ${element}
 
 #ulbyclass = xpath//ul[@class='%%']
 get ul_by_class
-    [Documentation]     Get ul by class "xpath=//ul[@class='%%']"
+    [Documentation]     Get unordered list by class "xpath=//ul[@class='%%']"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //ul[@class='${class}']
     [Return]    ${element}
 
 #ulbyid = xpath//ul[@id="%%"]
 get ul_by_id
-    [Documentation]     Get ul by id "xpath=//ul[@id='%%']"
+    [Documentation]     Get unordered list by id "xpath=//ul[@id='%%']"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //ul[@id='${id}']
     [Return]    ${element}
 
 #ulbcontainsclass = xpath//ul[contains(@class,'%%')]
 get ul_contains_class
-    [Documentation]     Get ul that contains class "xpath=//ul[contains(@class,'%%')]"
+    [Documentation]     Get unordered list that contains class "xpath=//ul[contains(@class,'%%')]"
     [Arguments]    ${class}
     ${element}=    Get WebElement      //ul[contains(@class,'${class}')]
     [Return]    ${element}
 
 #ulcontainsid = xpath//ul[contains(@id,'%%')]
 get ul_contains_id
-    [Documentation]     Get ul that contains id "xpath=//ul[contains(@id,'%%')]"
+    [Documentation]     Get unordered list that contains id "xpath=//ul[contains(@id,'%%')]"
     [Arguments]    ${id}
     ${element}=    Get WebElement      //ul[contains(@id,'${id}')]
     [Return]    ${element}
